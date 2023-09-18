@@ -132,13 +132,19 @@ i {
   align-items: center;
   padding: 15px;
   border-radius: 30px;
-  width: 150px;
+  width: 200px;
   margin-top: 2rem;
   font-weight: 600;
   font-size: 16px;
   background-color: #fd1586;
   color: white;
   cursor: pointer;
+  transition: 0.3s all;
+}
+
+.menuBtn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* ===> Media Queries <=== */
@@ -147,16 +153,20 @@ i {
     font-size: 55%;
   }
 
+  /* Navbar */
   #burger-menu {
     display: inline-block;
+  }
+
+  .navbar-extra i {
     font-size: 32px;
   }
 
   .header {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 25px;
     background-color: #fd1586;
   }
 
@@ -190,5 +200,45 @@ i {
 
   .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Hero */
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .info-side {
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+
+  .info-side p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .hero-img,
+  .hero-img img {
+    object-position: center;
+    width: 270px;
+    height: 270px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .menuBtn {
+    font-size: 14px;
+    width: 150px;
   }
 }
