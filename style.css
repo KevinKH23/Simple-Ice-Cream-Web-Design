@@ -132,6 +132,7 @@ i {
   align-items: center;
   padding: 15px;
   border-radius: 30px;
+  border: 2px solid black;
   width: 200px;
   margin-top: 2rem;
   font-weight: 600;
@@ -145,6 +146,97 @@ i {
 .menuBtn:hover {
   background-color: white;
   color: black;
+}
+
+/* ==>About Section <== */
+.about {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 25px 10%;
+  background-color: #afdfff;
+  min-height: 100vh;
+}
+
+h2.heading {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-info img {
+  width: 300px;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.left-button {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.right-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.right-button {
+  margin-top: 2rem;
+}
+
+.right-info img {
+  width: 400px;
+}
+
+.right-info p {
+  text-align: right;
+}
+
+.yellowBtn {
+  padding: 12px;
+  border-radius: 30px;
+  background-color: gold;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.yellowBtn:hover {
+  background-color: white;
+}
+
+.whiteBtn {
+  padding: 12px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.whiteBtn:hover {
+  background-color: gold;
 }
 
 /* ===> Media Queries <=== */
