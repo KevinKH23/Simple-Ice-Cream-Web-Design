@@ -14,3 +14,20 @@ document.addEventListener("click", function (e) {
     navbar.classList.remove("active");
   }
 });
+
+let lastScrollPosition = 0;
+
+document.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  const currentScrollPosition = window.scrollY;
+
+  if (currentScrollPosition > lastScrollPosition) {
+    // Scroll ke bawah
+    header.classList.add("hidden");
+  } else {
+    // Scroll ke atas
+    header.classList.remove("hidden");
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});
