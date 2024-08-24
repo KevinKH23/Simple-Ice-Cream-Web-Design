@@ -326,6 +326,129 @@ h2.heading {
   font-size: 32px; /* Ukuran ikon */
 }
 
+/* Flavors Section */
+.flavors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 25px 10%;
+  background-color: #afdfff;
+  min-height: 100vh;
+}
+
+.flavors-names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  position: relative;
+  width: 100%;
+}
+
+.flavor {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid black;
+  margin: 0 10px;
+  width: 200px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.flavors-names > .flavor:nth-child(1) {
+  transform: translateY(30px);
+}
+.flavors-names > .flavor:nth-child(2) {
+  transform: translateY(20px);
+}
+.flavors-names > .flavor:nth-child(3) {
+  transform: translateY(10px);
+}
+.flavors-names > .flavor:nth-child(4) {
+  transform: translateY(0);
+}
+.flavors-names > .flavor:nth-child(5) {
+  transform: translateY(10px);
+}
+.flavors-names > .flavor:nth-child(6) {
+  transform: translateY(20px);
+}
+.flavors-names > .flavor:nth-child(7) {
+  transform: translateY(30px);
+}
+
+.flavors-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 10px 25px;
+}
+
+.flavors-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: right;
+  align-items: center;
+}
+
+.flavors-info p {
+  text-align: right;
+}
+
+.flavors-button {
+  display: flex;
+  gap: 2rem;
+}
+
+.flavors-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.flavors-img i {
+  font-size: 32px;
+  color: black;
+  cursor: pointer;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.flavors-img i:hover {
+  color: #ff9ecb;
+}
+
+.flavors-img img {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s all;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-name {
+  position: absolute;
+  width: 300px;
+  font-family: "Pacifico", sans-serif;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 32px;
+  color: #333;
+}
+
 /* ===> Media Queries <=== */
 @media (max-width: 600px) {
   html {
