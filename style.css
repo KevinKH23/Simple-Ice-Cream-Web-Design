@@ -355,31 +355,30 @@ h2.heading {
   border-radius: 30px;
   border: 3px solid black;
   margin: 0 10px;
-  width: 200px;
   white-space: nowrap;
   text-align: center;
 }
 
 .flavors-names > .flavor:nth-child(1) {
-  transform: translateY(30px);
+  transform: translateY(70px) rotate(-18deg);
 }
 .flavors-names > .flavor:nth-child(2) {
-  transform: translateY(20px);
+  transform: translateY(30px) rotate(-9deg);
 }
 .flavors-names > .flavor:nth-child(3) {
-  transform: translateY(10px);
+  transform: translateY(10px) rotate(-4.5deg);
 }
 .flavors-names > .flavor:nth-child(4) {
   transform: translateY(0);
 }
 .flavors-names > .flavor:nth-child(5) {
-  transform: translateY(10px);
+  transform: translateY(10px) rotate(4.5deg);
 }
 .flavors-names > .flavor:nth-child(6) {
-  transform: translateY(20px);
+  transform: translateY(30px) rotate(9deg);
 }
 .flavors-names > .flavor:nth-child(7) {
-  transform: translateY(30px);
+  transform: translateY(70px) rotate(18deg);
 }
 
 .flavors-content {
