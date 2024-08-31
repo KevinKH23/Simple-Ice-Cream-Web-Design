@@ -71,33 +71,5 @@ document.addEventListener("DOMContentLoaded", function () {
   updateImage();
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const images = [
-//     "img/about-img.png", // Ganti dengan path gambar Anda
-//     "img/juiceimage.png",
-//     "img/smoothiesimage.png",
-//   ];
-
-//   let currentIndex = 0;
-
-//   const imgElement = document.getElementById("flavors-img");
-//   const prevArrow = document.getElementById("prev-arrow");
-//   const nextArrow = document.getElementById("next-arrow");
-
-//   // Function to update the image source
-//   function updateImage(index) {
-//     imgElement.src = images[index];
-//   }
-
-//   // Event listener for Previous arrow
-//   prevArrow.addEventListener("click", function () {
-//     currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-//     updateImage(currentIndex);
-//   });
-
-//   // Event listener for Next arrow
-//   nextArrow.addEventListener("click", function () {
-//     currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-//     updateImage(currentIndex);
-//   });
-// });
+// Footer Current Year
+document.getElementById("current-year").textContent = new Date().getFullYear();
