@@ -429,7 +429,7 @@ h2.heading {
 .flavors-img img {
   width: 300px;
   height: auto;
-  transition: transform 0.3s all;
+  transition: transform 3s all;
 }
 
 .image-container {
@@ -446,6 +446,153 @@ h2.heading {
   font-weight: bold;
   font-size: 32px;
   color: #333;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 25px 10%;
+  background-color: #ff9ecb;
+  min-height: 100vh;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 150%;
+  gap: 1rem;
+}
+
+.email {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+  height: 3.5rem;
+  width: 50%;
+}
+
+.contactBtn {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: gold;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+  width: 130px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.contactBtn:hover {
+  background-color: #7e6e16;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  margin-top: 1rem;
+  gap: 2px;
+}
+
+.social-media i {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.contact-image img {
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  left: 500px;
+  top: -120px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  width: 200%;
+  height: 170px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+}
+
+.info-logo {
+  gap: 10px;
+  padding-right: 30px;
+  border-right: 2px solid black;
+}
+
+.info-logo img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.info-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  padding: 0px 100px 0 30px;
+  border-right: 2px solid black;
+}
+
+.info-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  padding: 0px 100px 0 30px;
+}
+
+.info-form input {
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid black;
+  width: 200px;
+}
+
+.infoBtn {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 2px solid black;
+  padding: 5px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.infoBtn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* ===> Media Queries <=== */
